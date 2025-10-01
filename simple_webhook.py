@@ -23,8 +23,8 @@ except:
     openai_available = False
 
 # 配置
-WEBHOOK_SECRET = os.getenv('WEBHOOK_SECRET', 'whsec_uYchX7j43zCnRoRlOBcElXxL5Fq2nDZt')
-AGENTMAIL_API_KEY = os.getenv('AGENTMAIL_API_KEY', 'your_actual_api_key_here')
+WEBHOOK_SECRET = os.getenv('WEBHOOK_SECRET', '')
+AGENTMAIL_API_KEY = os.getenv('AGENTMAIL_API_KEY', '')
 SEND_REAL = os.getenv('SEND_REAL', '1') in ('1', 'true', 'True')  # 默认启用真实发送
 
 app = Flask(__name__)
